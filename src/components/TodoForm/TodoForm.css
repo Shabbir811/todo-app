@@ -1,0 +1,32 @@
+form{
+    min-height: 18rem;
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 2rem;
+    gap: 1rem;
+}
+.input-div{
+    height: 7rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    border: .2rem solid rgb(138, 126, 126);
+}
+.todo-input{
+    width: 66rem;
+    height: 6rem;
+    margin:  auto;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-div{
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
