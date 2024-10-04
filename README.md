@@ -1,5 +1,18 @@
 # React + TypeScript + Vite
 
+React Vite Todos App
+A simple and efficient Todo app built with React and Vite, utilizing TypeScript for type safety. The app allows you to manage your tasks with the following features:
+
+Add Tasks: Quickly add new tasks to your list.
+Delete Tasks: Remove tasks that are no longer needed.
+Mark as Completed: Easily mark tasks as completed and keep track of your progress.
+Clear All Tasks: Clear all tasks in one click, including those stored in local storage.
+Local Storage Support: Tasks are saved to local storage, ensuring they persist across sessions.
+Deployed on Vercel
+The project is deployed on Vercel: [View it here](https://todo-app-seven-roan-60.vercel.app/)
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
