@@ -100,7 +100,7 @@ function Todo() {
 
         </>
     )
-    // we add our array on local storage:
+    
 }
 
 export default Todo
