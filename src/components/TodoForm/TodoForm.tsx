@@ -3,11 +3,7 @@ import { ChangeEvent ,FormEvent,useState} from "react"
 import "./TodoForm.css"
 
 interface TodoFormProps  {
-    handleClickAddBtn : (inputVal:{
-        id: string;
-        text: string;
-        isChecked: boolean;
-    })=> void
+    handleClickAddBtn : (inputVal:{id: string,text: string,isChecked: boolean, })=> void
 
 }
 

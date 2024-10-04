@@ -12,17 +12,23 @@ interface TaskListProps {
 }
 
 function TaskList(props: TaskListProps) {
-    const { handleDelBtn,handleCheckBtn,id, text,  checked } = props;
+    const { handleDelBtn,handleCheckBtn, text, id,  checked } = props;
 
     return (
-        <li key={id} className="li">
-             {text!==""?<><span className={checked ? "check": "not-check"}>{text}</span>
-            <div className="sub-btn">
-                <Button title="Del" onClick={() => handleDelBtn(text)} className="sub-button"/>
-                <Button title="👍" onClick={() => handleCheckBtn(text)} className="sub-button"/>
-            </div></>
-            :<span className="empty-span">You Don't Have Any <strong>Task</strong></span>}
-        </li>
+        <>
+        {
+            text !== "" &&
+            text.charAt(0)!== " "&&
+            <li key={id} className="li">
+                <span className={checked ? "check": "not-check"}> {text} </span>
+                <div className="sub-btn">
+                    <Button title="Del" onClick={() => handleDelBtn(text)} className="sub-button"/>
+                    <Button title="👍" onClick={() => handleCheckBtn(text)} className="sub-button"/>
+                </div>   
+         
+            </li>
+        }
+        </>
     )
 }
 

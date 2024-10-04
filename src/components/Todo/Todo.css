@@ -11,25 +11,21 @@ html{
 body{
     max-width: 144rem;
     min-height: 102.4rem;
-    background: linear-gradient(to right ,rgb(30, 153, 215)  ,rgb(4, 75, 111),rgb(138, 143, 229));
+    background: linear-gradient(to right ,rgb(19, 20, 20)  ,rgb(50, 68, 77),rgb(9, 10, 22));
 
 }
 
 .todo-container{
-    min-height: 100rem;
-    max-width: 50%;
+    min-height: 60rem;
+    max-width: 60%;
+    width: 60rem;
     margin: 5rem auto;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 2px 4px 3px 1px #0606d3b4, -2px -4px 3px 1px #0606d3b4 ;
-    background: linear-gradient(45deg ,rgba(41, 50, 114, 0.608)  ,rgba(121, 200, 240, 0.575),rgba(41, 50, 114, 0.494),#2e338c);
-    background-color: red;
-
-    
-  
-
+    box-shadow:1px 1px 2px 1px #a4a4a56e, -1px -1px 2px 1px #d2d2d481 ;
+    background: linear-gradient(45deg ,rgba(10, 10, 10, 0.608)  ,rgba(25, 30, 34, 0.575),rgba(115, 122, 80, 0.664),#09090a);
 
 }
 
@@ -37,6 +33,7 @@ body{
 
 .task-list{
     width: 90%;
+    min-height: 20rem;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -50,27 +47,25 @@ body{
 
 
  li{
-    height:8rem;
+    min-height:6rem;
     width: 95%;
     color: rgb(255, 255, 255);
-    font-weight: 100;
-    background-color: transparent;
-    list-style-type: none;
-    padding: .2rem .5rem;
-    border: .1rem solid rgb(167, 232, 248);
     font-size: 1.7rem;
-    border-radius: 1rem;
+    font-weight: 100;
+    list-style-type: none;
+    padding: auto .5rem;
+    border-radius: .5rem;
     margin: .9rem 1.8rem 7.8rem 1.8rem;
     display: flex;
-    text-align: center;
+    
 
 
 }
 
 
 .main-button{
-    height: 40px;
-    width: 120px;
+    height: 3.6rem;
+    width: 10rem;
     background: rgb(81, 180, 212);
     color: white;
     text-align: center;
@@ -79,7 +74,7 @@ body{
     border: none;
     border-radius: 5px;
     padding: 0 5px;
-    box-shadow: 2px 4px 15px 1px #8f8383b4 ;
+    box-shadow: 0px 0px 3px 1px #313030b4 ;
     margin: 2rem;
     cursor: pointer;
 }
@@ -87,40 +82,39 @@ body{
 
 .main-button:hover{
     transform: scale(.9);
-    box-shadow: 1px 2px 15px 5px #d2cbcbb4 ;
-    background-color: #339df3;
+    box-shadow: 1px 2px 15px 5px #302c2cb4 ;
+    background-color: #07138191;
 
 
 }
 
 
 .sub-button{
-    height: 3.8rem;
-    width: 3.8rem;
-    background: rgb(93, 96, 254);
+    height: 3.2rem;
+    width: 3.2rem;
+    background: rgb(77, 94, 117);
     color: white;
     text-align: center;
-    border: none;
     border-radius: 50%;
-    padding: 0 5px;
+    padding: 0 .5px;
     font-size: 1.5rem;
-    box-shadow: 0px 2px 2px  #ea3737bc ;
+    border: none;
     margin: 1rem;
 }
 
 .sub-button:hover{
     transform: scale(.9);
-    box-shadow: 1px 2px 15px 5px #090303b4 ;
+    box-shadow: 1px 2px 15px 5px #442b7cb4 ;
     background-color: #04457a;
 
 
 }
 
 .check{
-    text-decoration: line-through;
-    text-transform: uppercase;
-    color: black;
-    font-weight: 500;
+    text-decoration: .4rem rgb(5, 3, 3) line-through;
+    color: rgb(22, 138, 37);
+    font-weight: 450;
+    font-size: 2.8rem;
 }
 
 .not-check{
@@ -128,6 +122,7 @@ body{
     text-transform: lowercase;
     color: beige;
     font-weight: 300;
+    font-size: 2rem;
 
 }
 
@@ -147,28 +142,35 @@ body{
 }
 
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:620px) {
     
     html{
-            font-size: 40%;
+            font-size: 50%;
     }
 
     li{
-        font-size: 16px;
+        font-size: 8px;
     }
-    .todo-container{
-        max-width: 80%;
-    }
-    
-}
-@media screen and (max-width:450px) {
-    
     .todo-container{
         max-width: 90%;
     }
     
 }
+@media screen and (max-width:490px) {
+    html{
+        font-size: 40%;
+}
+
+    
+    .todo-container{
+        max-width: 95%;
+    }
+    
+}
 @media screen and (max-width:400px) {
+    html{
+        font-size: 38%;
+}
     
     .todo-container{
         max-width: 98%;

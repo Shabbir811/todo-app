@@ -19,15 +19,8 @@ function Todo() {
     const handleAddTask = ({id,text,isChecked}:{id:string, text:string, isChecked:boolean} ) => {
         
         const matchTodoText = taskList.find((task)=> task.text === text);
-        if (!text){
-            return
-        }else if(matchTodoText){
-                return
-
-           }else if(taskList[0].text === ""){
-            taskList.shift()
-            
-        }
+        if (!text)return;
+        if(matchTodoText)return;
             setTaskList(prev=> [...prev,{id ,text, isChecked}]);
             
     }
