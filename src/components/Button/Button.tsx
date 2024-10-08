@@ -12,7 +12,7 @@ interface ButtonProps {
 function Button (props:ButtonProps){
 
     return(
-        <button className={props.className} onClick={props.onClick} type={props.type} >{props.title} </button>
+        <button className={props.className} onClick={props.onClick} type={props.type}  >{props.title} </button>
     )
 
 }

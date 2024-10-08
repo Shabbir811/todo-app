@@ -37,7 +37,7 @@ function TodoForm (props:TodoFormProps){
             </div>
             
             <div className="btn-div">
-                <Button  type="submit" title="Add task" className="main-button" />
+                <Button  type="submit" title="➕" className="main-button" />
             </div>
 
         </form>

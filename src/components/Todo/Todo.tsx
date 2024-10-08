@@ -86,7 +86,7 @@ function Todo() {
 
                     </div>
                 </div>
-                <Button title="Clear All" className="main-button" onClick={()=>handleClearAllBtn()} />
+                <Button title="✖️All" className="main-button" onClick={()=>handleClearAllBtn()} />
 
             </div>
             

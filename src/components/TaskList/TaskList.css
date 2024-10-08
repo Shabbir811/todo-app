@@ -18,18 +18,16 @@
    
 }
 
-.empty-span{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #969be4;
-    font-size: 2.5rem;
+.span-color{
+    background-color: #ffffff5b;
+        
+    
 }
 
-.empty-span strong{
-    color: red;
+span{
+    width: 100%;
 }
+
 
 
 
